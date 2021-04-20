@@ -24,7 +24,7 @@ namespace OnSale.Common.Services
                 };
 
                 string url = $"{servicePrefix}{controller}";
-                HttpResponseMessage response = await client.GetAsync(url);
+                var response = await client.GetAsync("http://179.50.72.243:8010/api/Products");
                 string result = await response.Content.ReadAsStringAsync();
 
                 if (!response.IsSuccessStatusCode)

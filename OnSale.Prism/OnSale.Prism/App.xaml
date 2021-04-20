@@ -7,8 +7,7 @@
 
         <ResourceDictionary>
 
-            <!-- Parameters -->
-            <!--<x:String x:Key="UrlAPI">https://onsalezulu.azurewebsites.net</x:String>-->
+            <!-- Parameters -->            
             <x:String x:Key="UrlAPI">https://onsaleprepweb.azurewebsites.net</x:String>
             <x:String x:Key="UrlNoImage">https://onsalezulu.azurewebsites.net/images/noimage.png</x:String>
 
