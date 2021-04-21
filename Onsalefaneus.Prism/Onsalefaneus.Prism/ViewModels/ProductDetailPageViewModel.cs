@@ -1,4 +1,5 @@
-﻿using OnSale.Common.Responses;
+﻿using OnSale.Common.Entities;
+using OnSale.Common.Responses;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -12,6 +13,7 @@ namespace Onsalefaneus.Prism.ViewModels
 	public class ProductDetailPageViewModel : ViewModelBase
 	{
         private readonly INavigationService _navigationService;
+        private ObservableCollection<ProductImage> _images;
         private ProductResponse _product;
 
         public ProductDetailPageViewModel(INavigationService navigationService)
@@ -20,6 +22,13 @@ namespace Onsalefaneus.Prism.ViewModels
             _navigationService = navigationService;
             Title = "Prodct";
         }
+
+        public ObservableCollection<ProductImage> Images
+        {
+            get => _images;
+            set => SetProperty(ref _images, value);
+        }
+
 
         public ProductResponse Product
         {
@@ -35,8 +44,7 @@ namespace Onsalefaneus.Prism.ViewModels
             {
                 Product = parameters.GetValue<ProductResponse>("product");
                 Title = Product.Name;
-
-                //Images = new ObservableCollection<ProductImage>(Product.ProductImages);
+                Images = new ObservableCollection<ProductImage>(Product.ProductImages);
             }
         }
     }

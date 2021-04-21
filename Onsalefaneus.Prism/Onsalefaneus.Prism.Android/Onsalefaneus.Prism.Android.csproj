@@ -68,6 +68,9 @@
     <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator">
       <Version>19.1.0.56</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfRotator">
+      <Version>19.1.0.56</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading">
       <Version>2.4.11.982</Version>
     </PackageReference>

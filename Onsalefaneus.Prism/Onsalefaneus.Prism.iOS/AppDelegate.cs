@@ -3,6 +3,7 @@ using Foundation;
 using Prism;
 using Prism.Ioc;
 using Syncfusion.SfBusyIndicator.XForms.iOS;
+using Syncfusion.SfRotator.XForms.iOS;
 using UIKit;
 
 
@@ -26,6 +27,7 @@ namespace Onsalefaneus.Prism.iOS
             global::Xamarin.Forms.Forms.Init();
             CachedImageRenderer.Init();
             new SfBusyIndicatorRenderer();
+            new SfRotatorRenderer();
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);            
