@@ -8,6 +8,8 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true"
              xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             xmlns:i18n="clr-namespace:Onsalefaneus.Prism.Helpers"
+             BackgroundColor="{StaticResource ColorBackground}"
              Title="{Binding Title}">
 
     <AbsoluteLayout>
@@ -15,7 +17,7 @@
         <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1"
                      AbsoluteLayout.LayoutFlags="All" 
                      Padding="5">
-            <SearchBar Placeholder="Search a product..."
+            <SearchBar Placeholder="{i18n:Translate SearchProduct}"
                 SearchCommand="{Binding SearchCommand}"
                 Text="{Binding Search}"/>
 
@@ -53,7 +55,6 @@
                             </StackLayout>
                             <Image Grid.Column="2" 
                                Source="ic_more_vert"/>
-
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
@@ -63,11 +64,11 @@
         <busyindicator:SfBusyIndicator AnimationType="Gear" 
                                        AbsoluteLayout.LayoutBounds=".5,.5,.5,.5"
                 	                   AbsoluteLayout.LayoutFlags="All"
-                	                   BackgroundColor="Silver"
+                	                   BackgroundColor="{StaticResource ColorAccent}"
                 	                   HorizontalOptions="Center"
-                	                   TextColor="White"
+                	                   TextColor="{StaticResource ColorFontInverse}"
                 	                   IsBusy="{Binding IsRunning}"
-                	                   Title="Loading..."
+                	                   Title="{i18n:Translate Loading}"
                 	                   VerticalOptions="Center"
                 	                   ViewBoxWidth="80"
                 	                   ViewBoxHeight="80" />

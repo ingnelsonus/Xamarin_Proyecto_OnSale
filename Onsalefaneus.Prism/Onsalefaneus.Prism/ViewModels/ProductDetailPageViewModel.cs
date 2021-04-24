@@ -1,5 +1,6 @@
 ﻿using OnSale.Common.Entities;
 using OnSale.Common.Responses;
+using Onsalefaneus.Prism.Helpers;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -20,7 +21,7 @@ namespace Onsalefaneus.Prism.ViewModels
             : base(navigationService)
         {
             _navigationService = navigationService;
-            Title = "Prodct";
+            Title = Languages.Product;
         }
 
         public ObservableCollection<ProductImage> Images

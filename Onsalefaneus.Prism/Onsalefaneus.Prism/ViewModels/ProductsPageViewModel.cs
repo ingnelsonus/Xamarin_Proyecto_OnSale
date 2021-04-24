@@ -10,6 +10,7 @@ using System.Linq;
 using Xamarin.Essentials;
 using OnSale.Common.Responses;
 using Onsalefaneus.Prism.ItemViewModels;
+using Onsalefaneus.Prism.Helpers;
 
 namespace Onsalefaneus.Prism.ViewModels
 {
@@ -29,7 +30,7 @@ namespace Onsalefaneus.Prism.ViewModels
             :base(navigationService)
         {
             _navigationService = navigationService;
-            Title = "Products";
+            Title = Languages.Products;
             _apiService = apiServices;
             LoadProductsAsync();
         }
@@ -69,7 +70,7 @@ namespace Onsalefaneus.Prism.ViewModels
         {
             if(Connectivity.NetworkAccess != NetworkAccess.Internet)
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Check the internet connection.", "Accept");
+                await App.Current.MainPage.DisplayAlert(Languages.Error, Languages.ConnectionError, Languages.Accept);
                 return;
             }
 
@@ -80,7 +81,7 @@ namespace Onsalefaneus.Prism.ViewModels
 
             if (!response.IsSuccess)
             {
-                await App.Current.MainPage.DisplayAlert("Error",response.Message,"Accept");
+                await App.Current.MainPage.DisplayAlert(Languages.Error,response.Message,Languages.Accept);
                 return;
             }
 
