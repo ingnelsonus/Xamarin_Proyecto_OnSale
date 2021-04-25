@@ -23,7 +23,8 @@ namespace Onsalefaneus.Prism
             SyncfusionLicenseProvider.RegisterLicense("NDMyMjE2QDMxMzkyZTMxMmUzMFplR0xRVXQzUUZrNGZZOXRrRm1pY0dGeFhoNkx2bzRyeCtYakdxTWVhVU09");
             InitializeComponent();            
 
-            await NavigationService.NavigateAsync($"NavigationPage/{nameof(ProductsPage)}");
+            await NavigationService.NavigateAsync($"{nameof(Views.OnSaleMasterDetailPage)}/NavigationPage/{nameof(ProductsPage)}");
+
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -36,6 +37,15 @@ namespace Onsalefaneus.Prism
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<ProductsPage, ProductsPageViewModel>();
             containerRegistry.RegisterForNavigation<ProductDetailPage, ProductDetailPageViewModel>();
+            containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
+            containerRegistry.RegisterForNavigation<Views.OnSaleMasterDetailPage, OnSaleMasterDetailPageViewModel>();
+            containerRegistry.RegisterForNavigation<ShowCarPage, ShowCarPageViewModel>();
+            containerRegistry.RegisterForNavigation<ShowHistoryPage, ShowHistoryPageViewModel>();
+            containerRegistry.RegisterForNavigation<ModifyUserPage, ModifyUserPageViewModel>();
+            containerRegistry.RegisterForNavigation<QualificationsPage, QualificationsPageViewModel>();
+            containerRegistry.RegisterForNavigation<QualificationDetailPage, QualificationDetailPageViewModel>();
+            containerRegistry.RegisterForNavigation<ProductTabbedPage, ProductTabbedPageViewModel>();
+            containerRegistry.RegisterForNavigation<AddQualificationPage, AddQualificationPageViewModel>();
         }
     }
 }

@@ -156,4 +156,67 @@
   <data name="Products" xml:space="preserve">
     <value>Productos</value>
   </data>
+  <data name="Login" xml:space="preserve">
+    <value>Iniciar sesión</value>
+  </data>
+  <data name="ModifyUser" xml:space="preserve">
+    <value>Modificar usuario</value>
+  </data>
+  <data name="ShowPurchaseHistory" xml:space="preserve">
+    <value>Mostrar historial de compras</value>
+  </data>
+  <data name="ShowShoppingCar" xml:space="preserve">
+    <value>Mostrar Carrito de Compra</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="EmailPlaceHolder" xml:space="preserve">
+    <value>Introduzca su dirección de correo electrónico</value>
+  </data>
+  <data name="EmailError" xml:space="preserve">
+    <value>Debes introducir una dirección de correo válida.</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="PasswordPlaceHolder" xml:space="preserve">
+    <value>Escriba la contraseña</value>
+  </data>
+  <data name="PasswordError" xml:space="preserve">
+    <value>Debes ingresar tu contraseña</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>¿Olvidó la contraseña?</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Reg. nuevo usuario</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>¡Correo electrónico o contraseña incorrectos!</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
+  <data name="LoginFirstMessage" xml:space="preserve">
+    <value>Debes iniciar sesión para completar esta acción. Puede iniciar sesión o registrarse como usuario a continuación.!</value>
+  </data>
+  <data name="Qualification" xml:space="preserve">
+    <value>Calificación</value>
+  </data>
+  <data name="Qualifications" xml:space="preserve">
+    <value>Cualificación</value>
+  </data>
+  <data name="QualificationNumber" xml:space="preserve">
+    <value>¡Número de titulaciones!</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Fecha:</value>
+  </data>
+  <data name="Remarks" xml:space="preserve">
+    <value>Notas:</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
 </root>

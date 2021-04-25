@@ -38,7 +38,7 @@ namespace Onsalefaneus.Prism.ItemViewModels
             };
 
             Settings.Product = JsonConvert.SerializeObject(this);
-            await _navigationService.NavigateAsync(nameof(ProductDetailPage), parameters);
+            await _navigationService.NavigateAsync(nameof(ProductTabbedPage), parameters);
         }
 
         private async void SelectProduct2Async()
