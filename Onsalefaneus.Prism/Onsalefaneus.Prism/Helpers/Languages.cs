@@ -89,6 +89,75 @@ namespace Onsalefaneus.Prism.Helpers
 
         public static string Save => Resource1.Save;
 
+        public static string Register => Resource1.Register;
+
+        public static string Document => Resource1.Document;
+
+        public static string DocumentError => Resource1.DocumentError;
+
+        public static string DocumentPlaceHolder => Resource1.DocumentPlaceHolder;
+
+        public static string FirstName => Resource1.FirstName;
+
+        public static string FirstNameError => Resource1.FirstNameError;
+
+        public static string FirstNamePlaceHolder => Resource1.FirstNamePlaceHolder;
+
+        public static string LastName => Resource1.LastName;
+
+        public static string LastNameError => Resource1.LastNameError;
+
+        public static string LastNamePlaceHolder => Resource1.LastNamePlaceHolder;
+
+        public static string Address => Resource1.Address;
+
+        public static string AddressError => Resource1.AddressError;
+
+        public static string AddressPlaceHolder => Resource1.AddressPlaceHolder;
+
+        public static string Phone => Resource1.Phone;
+
+        public static string PhoneError => Resource1.PhoneError;
+
+        public static string PhonePlaceHolder => Resource1.PhonePlaceHolder;
+
+        public static string City => Resource1.City;
+
+        public static string CityError => Resource1.CityError;
+
+        public static string CityPlaceHolder => Resource1.CityPlaceHolder;
+
+        public static string Department => Resource1.Department;
+
+        public static string DepartmentError => Resource1.DepartmentError;
+
+        public static string DepartmentPlaceHolder => Resource1.DepartmentPlaceHolder;
+
+        public static string Country => Resource1.Country;
+
+        public static string CountryError => Resource1.CountryError;
+
+        public static string CountryPlaceHolder => Resource1.CountryPlaceHolder;
+
+        public static string PasswordConfirm => Resource1.PasswordConfirm;
+
+        public static string PasswordConfirmError1 => Resource1.PasswordConfirmError1;
+
+        public static string PasswordConfirmError2 => Resource1.PasswordConfirmError2;
+
+        public static string PasswordConfirmPlaceHolder => Resource1.PasswordConfirmPlaceHolder;
+
+        public static string Error001 => Resource1.Error001;
+
+        public static string Error002 => Resource1.Error002;
+
+        public static string Error003 => Resource1.Error003;
+
+        public static string Error004 => Resource1.Error004;
+
+        public static string Ok => Resource1.Ok;
+
+        public static string RegisterMessge => Resource1.RegisterMessge;
 
     }
 

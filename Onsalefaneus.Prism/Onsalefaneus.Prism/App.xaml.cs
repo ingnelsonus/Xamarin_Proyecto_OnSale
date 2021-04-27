@@ -1,4 +1,5 @@
 using OnSale.Common.Services;
+using Onsalefaneus.Prism.Helpers;
 using Onsalefaneus.Prism.ViewModels;
 using Onsalefaneus.Prism.Views;
 using Prism;
@@ -32,6 +33,7 @@ namespace Onsalefaneus.Prism
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
 
             containerRegistry.Register<IApiService, ApiService>();
+            containerRegistry.Register<IRegexHelper, RegexHelper>();
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
@@ -46,6 +48,7 @@ namespace Onsalefaneus.Prism
             containerRegistry.RegisterForNavigation<QualificationDetailPage, QualificationDetailPageViewModel>();
             containerRegistry.RegisterForNavigation<ProductTabbedPage, ProductTabbedPageViewModel>();
             containerRegistry.RegisterForNavigation<AddQualificationPage, AddQualificationPageViewModel>();
+            containerRegistry.RegisterForNavigation<RegisterPage, RegisterPageViewModel>();
         }
     }
 }
