@@ -1,3 +1,4 @@
+using OnSale.Common.Helpers;
 using OnSale.Common.Services;
 using Onsalefaneus.Prism.Helpers;
 using Onsalefaneus.Prism.ViewModels;
@@ -34,6 +35,7 @@ namespace Onsalefaneus.Prism
 
             containerRegistry.Register<IApiService, ApiService>();
             containerRegistry.Register<IRegexHelper, RegexHelper>();
+            containerRegistry.Register<IFilesHelper, FilesHelper>();
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();

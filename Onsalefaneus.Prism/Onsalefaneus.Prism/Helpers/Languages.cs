@@ -159,6 +159,19 @@ namespace Onsalefaneus.Prism.Helpers
 
         public static string RegisterMessge => Resource1.RegisterMessge;
 
+        public static string PictureSource => Resource1.PictureSource;
+
+        public static string Cancel => Resource1.Cancel;
+
+        public static string FromCamera => Resource1.FromCamera;
+
+        public static string FromGallery => Resource1.FromGallery;
+
+        public static string NoCameraSupported => Resource1.NoCameraSupported;
+
+        public static string NoGallerySupported => Resource1.NoGallerySupported;
+
+
     }
 
 }

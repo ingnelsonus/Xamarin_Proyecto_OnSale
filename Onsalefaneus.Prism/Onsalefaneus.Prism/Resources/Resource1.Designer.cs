@@ -106,6 +106,15 @@ namespace Onsalefaneus.Prism.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Cancel.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Category.
         /// </summary>
         public static string Category {
@@ -367,6 +376,24 @@ namespace Onsalefaneus.Prism.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a From Camera.
+        /// </summary>
+        public static string FromCamera {
+            get {
+                return ResourceManager.GetString("FromCamera", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a From Gallery.
+        /// </summary>
+        public static string FromGallery {
+            get {
+                return ResourceManager.GetString("FromGallery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Is Starred.
         /// </summary>
         public static string IsStarred {
@@ -475,6 +502,24 @@ namespace Onsalefaneus.Prism.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a The device does not support access to the camera..
+        /// </summary>
+        public static string NoCameraSupported {
+            get {
+                return ResourceManager.GetString("NoCameraSupported", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a The device does not support access to the gallery..
+        /// </summary>
+        public static string NoGallerySupported {
+            get {
+                return ResourceManager.GetString("NoGallerySupported", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ok.
         /// </summary>
         public static string Ok {
@@ -570,6 +615,15 @@ namespace Onsalefaneus.Prism.Resources {
         public static string PhonePlaceHolder {
             get {
                 return ResourceManager.GetString("PhonePlaceHolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Where do you want to take the picture?.
+        /// </summary>
+        public static string PictureSource {
+            get {
+                return ResourceManager.GetString("PictureSource", resourceCulture);
             }
         }
         
